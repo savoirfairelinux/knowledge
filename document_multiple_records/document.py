@@ -57,7 +57,7 @@ class document_file(orm.Model):
         model and model_id.
         """
         context = context or {}
-        ir_attachment_doc_obj = self.pool('ir.attachment.document')
+        ir_attachment_doc_obj = self.pool.get('ir.attachment.document')
         res = [('id', 'in', [])]
         # Format query with the res_model and res_id to search
         # in ir.attachment.document model.

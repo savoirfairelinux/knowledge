@@ -65,7 +65,7 @@ var _t = instance.web._t,
             this.model_id = model_id;
             // Add the model and the model_id in the context
             var context = {
-                'model': dataset.model
+                'model': dataset.model,
                 'model_id': model_id
             };
             if (args && args[0].error) {
